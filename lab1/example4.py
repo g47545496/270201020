@@ -40,5 +40,3 @@ elif Delta < 0:
   
   
 
-import random 
-x=("Ahmet","Ali","Ayşe","mehmet")
