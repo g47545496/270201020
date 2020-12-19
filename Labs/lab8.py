@@ -67,3 +67,36 @@ def main():
   liste3=get_overlap(liste1,liste2)
   print(liste3)
 main()
+##Password
+def password(a):
+    c=0
+    d=0
+    e=0
+    b=0
+    for i in a:
+        if len(a)<8:
+            c=0
+            return c
+            break
+        if i.isalpha():
+            d+=1
+        elif i.isdigit():
+            e+=1
+        elif i==" ":
+            c=0
+            return c
+            break
+        else:
+            b+=1
+    if d>1 :
+        c+=1
+    if e>1:
+        c+=1
+    if b>1:
+        c+=1
+    return c
+f=input("Enter the password:")
+def main():
+    b=password(f)
+    print("(",b,")","level")
+main()
